@@ -9,7 +9,7 @@ jobs:
     steps:
     - name: "ABI Coverity Scan"
       id: "ABICoverityScan"
-      uses: intel-innersource/frameworks.actions.abstract-build-interface-lib/abi_init@main
+      uses: intel-innersource/frameworks.actions.abi-coverity-scan@v2
       with:
           stream: "ABI_TestingCoverity-Plugin"
           scan_username: ${{ secrets.COVR_USER }}
