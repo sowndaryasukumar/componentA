@@ -12,8 +12,8 @@ jobs:
       uses: intel-innersource/frameworks.actions.abi-coverity-scan@<release_version>
       with:
           stream: "ABI_TestingCoverity-Plugin"
-          scan_username: ${{ coverity_scan.COVR_USER }}
-          scan_password: ${{ coverity_scan.COVR_PWD }}
+          scan_username: ${{ secrets.COVR_USER }}
+          scan_password: ${{ secrets.COVR_PWD }}
     - name: Print Environment Variables
       run: env | sort
         echo $coverity_scan.COVR_PWD
