@@ -7,11 +7,8 @@ jobs:
   coverity:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v2
-    - name: repo checkout
-      run: |
-          cd ${WORKSPACE}
-          git clone ssh://icggerrit.corp.intel.com:29418/cov_scripts
+      - name: Print Environment Variables
+        run: env | sort
     # - name: config
     #   run: CC=gcc ./config --banner=Configured --debug enable-fips enable-rc5 enable-md2 enable-ssl3 enable-nextprotoneg enable-ssl3-method enable-weak-ssl-ciphers enable-zlib enable-ec_nistp_64_gcc_128 no-shared enable-buildtest-c++ enable-external-tests -DPEDANTIC -DFUZZING_BUILD_MODE_UNSAFE_FOR_PRODUCTION
     # - name: config dump
