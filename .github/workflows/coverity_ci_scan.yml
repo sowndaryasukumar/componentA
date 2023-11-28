@@ -13,7 +13,7 @@ jobs:
       with:
           stream: "ABI_TestingCoverity-Plugin"
           scan_username: "sowndar"
-          scan_password: "Prestige@123"
+          scan_password: ""
     - name: Print Environment Variables
       run: env | sort
     # - name: config
