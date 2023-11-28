@@ -5,7 +5,7 @@ on: [pull_request]
 
 jobs:
   coverity:
-    runs-on: gasp
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v2
     - name: repo checkout
